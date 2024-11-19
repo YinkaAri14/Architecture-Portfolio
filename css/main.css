@@ -16,40 +16,6 @@ h1, p {
   margin: 0;
 }
 
-/* Carousel Section */
-#carousel {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.carousel-images {
-  display: flex;
-  width: 300%;
-  animation: carousel 60s ease-in-out infinite; /* Slowed down to 60 seconds */
-}
-
-.carousel-item {
-  width: 100%;
-  object-fit: cover;
-  height: 100vh;
-}
-
-/* Keyframes for the Carousel Animation */
-@keyframes carousel {
-  0% {
-    transform: translateX(0); /* Start at the first image */
-  }
-  33.33% {
-    transform: translateX(-100%); /* Move to the second image */
-  }
-  66.66% {
-    transform: translateX(-200%); /* Move to the third image */
-  }
-  100% {
-    transform: translateX(0); /* Return to the first image */
-  }
-}
 
 /* Header Styles */
 .header {
@@ -120,5 +86,5 @@ footer {
   background-color: #333;
   color: white;
   padding: 10px;
-  text-align: center;
+  text-align: center ;
 }
