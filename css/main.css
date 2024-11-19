@@ -8,7 +8,7 @@
 
 h1 {
   font-family: pennypacker, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   color: #333;
   margin-left: 30px;
@@ -97,6 +97,9 @@ h3 {
 }
 
 footer {
+  font-family: pennypacker-semiwide, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #333;
   color: white;
   padding: 10px;
