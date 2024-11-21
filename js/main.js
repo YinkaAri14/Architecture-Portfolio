@@ -10,10 +10,11 @@ $(document).ready(function(){
     });
   });
       
+  const hamMenu = document.querySelector(".ham-menu");
 
-// JavaScript to handle the hamburger menu toggle
-document.getElementById('hamburger-icon').addEventListener('click', function() {
-    // Toggle menu visibility here, for example:
-    alert('Hamburger menu clicked!'); // Placeholder for actual menu toggle functionality.
-  });
-  
+const offScreenMenu = document.querySelector(".off-screen-menu");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
