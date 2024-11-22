@@ -89,7 +89,7 @@ background-color: white;
 }
 
 .ham-menu.active span:nth-child(2){
-	opacity: 0%;
+	opacity: 100%;
 }
 .ham-menu.active span:nth-child(3){
 	top:50% ;
