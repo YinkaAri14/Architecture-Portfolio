@@ -96,6 +96,25 @@ background-color: white;
 	transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+a {
+  text-decoration: none;  
+  color: inherit;         
+}
+
+a:visited {
+  color: inherit;        
+}
+
+a:hover, a:focus {
+  color: #007bff;         
+  text-decoration: underline; 
+}
+
+a:active {
+  color: #0056b3;         
+}
+
+
 li{
   font-family: pennypacker-semiwide, sans-serif;
   font-weight: 700;
@@ -173,3 +192,55 @@ footer {
 .slick-next {
   right: 25px
 }
+
+
+.project1{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow: hidden; 
+    font-family: Arial, sans-serif;
+  }
+  
+  .scroll-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    scroll-snap-type: x mandatory; 
+  }
+  
+  .scroll-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .section {
+    flex-shrink: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    scroll-snap-align: start; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+
+  .about
