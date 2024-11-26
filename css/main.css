@@ -96,6 +96,16 @@ background-color: white;
 	transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+li{
+  font-family: pennypacker-semiwide, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+  margin-left: 60px;
+  padding: 15px;
+
+}
 h2 {
   font-family: pennypacker-semiwide, sans-serif;
   font-weight: 700;
