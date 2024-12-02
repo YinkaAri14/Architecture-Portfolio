@@ -1,5 +1,6 @@
 /* Place CSS styles here */
 /* Global Reset */
+/* Index Page */
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +28,7 @@ h1 {
   z-index: 10;
 }
 
+/* Navigation Side Bar */
 .off-screen-menu{
 	background-color:black ;
 	height: 100vh;
@@ -125,6 +127,8 @@ li{
   padding: 15px;
 
 }
+
+/* On Main Page*/
 h2 {
   font-family: pennypacker-semiwide, sans-serif;
   font-weight: 700;
@@ -183,6 +187,8 @@ footer {
   padding: 10px;
   text-align: center ;
 }
+
+/* Carousel Slide Show */
 
 .slick-prev {
   left: 25px;
@@ -243,4 +249,144 @@ footer {
     font-size: 1.5rem;
   }
 
-  .about
+/* About Me Page */
+
+  .about{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about .body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+    max-width: 1200px;
+}
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about.off-screen-menu{
+	background-color:black ;
+	height: 100vh;
+	width: 100%;
+	max-width: 450px;
+	position: fixed;
+	top: 0;
+	right: -450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center ;
+	font-size: 3px;
+	transition: .3s ease;
+}
+
+.about.off-screen-menu.active{
+	right: 0;
+}
+
+.about nav{
+	padding: 10px;
+	display: flex;
+}
+
+.about.ham-menu{
+height: 50px;
+width: 50px;
+margin-left: auto;
+position: relative;
+}
+
+.about.ham-menu span{
+	height: 5px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	border-radius: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: .3s ease;
+	}
+
+.about.ham-menu span:nth-child(1){
+	top: 25%;
+}
+
+.about.ham-menu span:nth-child(3){
+	top: 75%;
+}
+.about.ham-menu.active span{
+background-color: white;
+}
+
+.about .ham-menu.active span:nth-child(1){
+	top:50% ;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.about .ham-menu.active span:nth-child(2){
+	opacity: 100%;
+}
+.about .ham-menu.active span:nth-child(3){
+	top:50% ;
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.about a {
+  text-decoration: none;  
+  color: inherit;         
+}
+
+.about a:visited {
+  color: inherit;        
+}
+
+.about a:hover, a:focus {
+  color: #007bff;         
+  text-decoration: underline; 
+}
+
+.about a:active {
+  color: #0056b3;         
+}
+
+
+.about li{
+  font-family: pennypacker-semiwide, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+  margin-left: 60px;
+  padding: 15px;
+
+}
+
+.about .slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+
+.about .slick-next {
+  right: 25px
+}
