@@ -1,19 +1,7 @@
 /* Place CSS styles here */
 /* Global Reset */
 /* Index Page */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-h1 {
-  font-family: pennypacker, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #333;
-  margin-left: 30px;
-}
 
 /* Header Styles */
 .header {
@@ -26,6 +14,26 @@ h1 {
   align-items: center;
   width: 100%;
   z-index: 10;
+}
+
+h1 {
+  font-family: pennypacker, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+  margin-left: 30px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; 
+}
+
+body {
+  display: flex;
+  flex-direction: column; 
 }
 
 /* Navigation Side Bar */
@@ -134,30 +142,15 @@ li{
 }
 
 /* On Main Page*/
-h2 {
+.bottom-text {
   font-family: pennypacker-semiwide, sans-serif;
   font-weight: 700;
   font-style: normal;
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  font-size: 40px;
-  margin-left: 30px;
-  margin-bottom: 150px;
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-}
-
-h3 {
-  font-family: pennypacker-semiwide, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   font-size: 20px;
   margin-left: 30px;
-  margin-bottom: 100px;
-  position: absolute;
+  margin-bottom: 150px;
   bottom: 30px;
   left: 30px;
 }
@@ -171,7 +164,6 @@ h3 {
   padding: 10px 20px;
   margin-bottom: 30px;
   margin-left: 30px;
-  position: absolute;
   bottom: 30px;
   left: 30px;
   text-decoration: none;
@@ -191,6 +183,7 @@ footer {
   color: white;
   padding: 10px;
   text-align: center ;
+  margin-top: auto;
 }
 
 /* Carousel Slide Show */
@@ -204,7 +197,7 @@ footer {
   right: 25px
 }
 
-
+/* Project 1 Page */
 .project1{
 
     margin: 0;
@@ -215,9 +208,22 @@ footer {
   html, body {
     height: 100%;
     overflow: hidden; 
-    font-family: Arial, sans-serif;
+    font-family: pennypacker-semiwide, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    
   }
   
+  p {
+    height: 100%; 
+    font-family: pennypacker-semiwide, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    align-items: center;
+
+  }
   .scroll-container {
     display: flex;
     justify-content: center;
@@ -235,7 +241,17 @@ footer {
     width: 100%;
   }
   
-  .section {
+  .section1 {
+    flex-shrink: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    scroll-snap-align: start; 
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+  }
+
+  .section2 {
     flex-shrink: 0; 
     width: 100vw; 
     height: 100vh; 
@@ -245,158 +261,79 @@ footer {
     align-items: center;
     color: rgb(0, 0, 0);
   }
+
+  .section3 {
+    flex-shrink: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    scroll-snap-align: start; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+  }
+
+  .section4 {
+    flex-shrink: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    scroll-snap-align: start; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+  }
+
   .right-align-image {
     float: right;
     margin-top: 165px;
-    width: 1100px; /* You can adjust this size */
+    width: 800px; 
     height: auto;
   }
   
   section h1, section p {
-    margin-right: 220px; /* Adjust according to the image size */
+    margin-right: 220px; 
   }
   
 
 /* About Me Page */
+.about{
 
-  .about{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
-.about .body, html {
+  .body, html {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
-}
-
-.about .container {
+  }
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
     width: 80%;
     max-width: 1200px;
-}
-.about h1 {
+  }
+  h1 {
     font-size: 2rem;
     margin-bottom: 10px;
-}
+  }
 
-.about p {
+  p {
     font-size: 1rem;
     line-height: 1.6;
-}
+  }
 
-.about.off-screen-menu{
-	background-color:black ;
-	height: 100vh;
-	width: 100%;
-	max-width: 450px;
-	position: fixed;
-	top: 0;
-	right: -450px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center ;
-	font-size: 3px;
-	transition: .3s ease;
-}
-
-.about.off-screen-menu.active{
-	right: 0;
-}
-
-.about nav{
-	padding: 10px;
-	display: flex;
-}
-
-.about.ham-menu{
-height: 50px;
-width: 50px;
-margin-left: auto;
-position: relative;
-}
-
-.about.ham-menu span{
-	height: 5px;
-	width: 100%;
-	background-color: rgb(255, 255, 255);
-	border-radius: 25px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	transition: .3s ease;
-	}
-
-.about.ham-menu span:nth-child(1){
-	top: 25%;
-}
-
-.about.ham-menu span:nth-child(3){
-	top: 75%;
-}
-.about.ham-menu.active span{
-background-color: white;
-}
-
-.about .ham-menu.active span:nth-child(1){
-	top:50% ;
-	transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.about .ham-menu.active span:nth-child(2){
-	opacity: 100%;
-}
-.about .ham-menu.active span:nth-child(3){
-	top:50% ;
-	transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.about a {
-  text-decoration: none;  
-  color: inherit;         
-}
-
-.about a:visited {
-  color: inherit;        
-}
-
-.about a:hover, a:focus {
-  color: #007bff;         
-  text-decoration: underline; 
-}
-
-.about a:active {
-  color: #0056b3;         
-}
-
-
-.about li{
-  font-family: pennypacker-semiwide, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: white;
-  font-size: 30px;
-  margin-left: 60px;
-  padding: 15px;
-
-}
-
-.about .slick-prev {
-  left: 25px;
-  z-index: 1;
-}
-
-.about .slick-next {
-  right: 25px
-}
-
-
+  .slick-prev {
+    left: 25px;
+    z-index: 1;
+  }
+  
+  .slick-next {
+    right: 25px
+  }

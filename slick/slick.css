@@ -127,3 +127,10 @@
 .slick-slide img {
     width: 100%;
 }
+
+.aboutme-carousel{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
