@@ -243,16 +243,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(0, 0, 0);
+  }
+  .right-align-image {
+    float: right;
+    margin-top: 165px;
+    width: 1100px; /* You can adjust this size */
+    height: auto;
   }
   
-  h1 {
-    font-size: 3rem;
+  section h1, section p {
+    margin-right: 220px; /* Adjust according to the image size */
   }
   
-  p {
-    font-size: 1.5rem;
-  }
 
 /* About Me Page */
 
@@ -395,3 +398,5 @@ background-color: white;
 .about .slick-next {
   right: 25px
 }
+
+
